@@ -1,0 +1,75 @@
+---
+import MainHead from "../components/MainHead.astro";
+import Footer from "../components/Footer/index.jsx";
+import Nav from "../components/Nav/index.jsx";
+
+function getAge(dateString) {
+	var today = new Date();
+	var birthDate = new Date(dateString);
+	var age = today.getFullYear() - birthDate.getFullYear();
+	var m = today.getMonth() - birthDate.getMonth();
+	if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+		age--;
+	}
+	return age;
+}
+const age = getAge("1995-05-28")
+---
+
+
+<html lang="en">
+	<head>
+		<MainHead title="About | Sören Christ" description="About Sören Christ" />
+		<style lang="scss">
+			.heroImg {
+				max-height: 24rem;
+				object-fit: cover;
+				overflow: hidden;
+				object-position: center;
+				img {
+					width: 100%;
+				}
+			}
+
+			.bio {
+				font-size: var(--f-u1);
+				line-height: 2;
+			}
+		</style>
+	</head>
+	<body>
+		<Nav />
+		<div class="wrapper">
+			<h1>About Me</h1>
+			<div class="heroImg">
+				<img
+					width="1400"
+					height="350"
+					src="title_alt.jpg"
+				/>
+			</div>
+			<div class="bio wrapper wrapper__readable mt8">
+				<p>
+					Hi everyone!
+				</p>
+				<p>
+					I am Sören, a Software developer from Stuttgart, Germany and I'm {age} years old.
+					It is kind of hard to tell which technologies I use, because I love a lot of programming languages.
+				</p>
+				<p>
+					After university, my first professionally used languages was ABAP, as I used to develop applications for SAP. Later I got into VB and finally C#, which is probably my most used and loved language today.
+					Personally I think, that the programming language is just a tool and it depends on the product, the company and your team which language is the best for the job. For this reason I used a lot more languages in various differen projects
+					including but not limited to: JavaScript, TypeScript, Java, Python, C++...
+				</p>
+				<p>
+					Programming is my passion, because solving complex problems and learning new conecpts is so much fun. 
+				</p>
+				<p>
+					Outside of programming I enjoy hiking, skiing and traveling in general. Sports is my way to clear my head, no matter if it is playing football, running or going to the gym. 
+				</p>
+				<p>While you are here, make sure to check out some of my projects and feel free to reach to me on <a href="https://twitter.com/soerenchrist">Twitter</a>.</p>
+			</div>
+		</div>
+		<Footer />
+	</body>
+</html>
