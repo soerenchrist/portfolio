@@ -11,6 +11,8 @@
 	display: block;
 	color: var(--t-fg);
 	text-decoration: none;
+	width: 2em;
+	height: 2em;
 }
 
 .link {
@@ -28,6 +30,7 @@
 		color: var(--t-active);
 	}
 }
+
 
 .monogram {
 	display: flex;
