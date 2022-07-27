@@ -2,9 +2,9 @@
 layout: ../../layouts/project.astro
 title: Hanoi - Speed Run
 client: Self
-dark: false
+dark: true
 publishDate: 2021-04-15 00:00:00
-img: /projects/tourgether.png
+img: /projects/hanoi.png
 description: |
   I built Hanoi for Android.
 tags:

@@ -12,6 +12,7 @@ tags:
   - web
   - blazor
   - wasm
+  - C#
 ---
 
 GeographyHero is a collection of different geography based games. Those include:

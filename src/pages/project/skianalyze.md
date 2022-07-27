@@ -11,6 +11,7 @@ tags:
   - web
   - vue
   - osm
+  - C#
 ---
 
 SkiAnalyze is a web application that analyzes Garmins proprietary .FIT files from their watches to get insights of skiing day.
