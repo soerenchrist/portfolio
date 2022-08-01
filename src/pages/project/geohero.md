@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/project.astro
-title: GeographyHero
+title: GeoHero
 client: Self
 publishDate: 2022-04-19 00:00:00
 dark: false
@@ -8,24 +8,23 @@ img: /projects/geohero.png
 description: |
   I built a collection of geography based games
 tags:
-  - dotnet
+  - typescript
+  - aws
   - web
-  - blazor
-  - wasm
-  - C#
 ---
 
-GeographyHero is a collection of different geography based games. Those include:
-*Secret Country*: Find the secret country as fast as you can by following the distance hints.
-*Shape Guesser*: Try to guess the correct country only by its shape.
-*Country Feud*: Decide which of two countries win in a give category (size, population, density...)
-*Flag Guesser*: How many flags can you guess correctly in one minute?
-The app is publicly available at [geohero.soerenchrist.de](https://geoher.soerenchrist.de). 
+GeoHero is a geography based quiz. Try to guess the searched countries as fast as possible. Start by guessing any country. The game will present you your guess on a map. Depending on how far your guess is away, the color of the country will be more red or green. If configured you will get more information like distance or direction of the searched country, which will make it a bit easier.
+
+The game supports challenging friends. It will generate a random series of countries, which will stay the same for your friends. Authentication is not required.
+
+The app is publicly available at [geohero.soerenchrist.de](https://geohero.soerenchrist.de). 
+
+Also the code is open source on [Github](https://github.com/soerenchrist/geohero).
 
 Some of the technologies I used:
-- Dotnet 6
-- Blazor WebAssembly
+- [NextJS](https://nextjs.org)
+- [tRPC](https://trpc.io)
+- [Tailwind](https://tailwindcss.com)
 - [Leaflet](https://leafletjs.com)
-- [MatBlazor](https://www.matblazor.com/)
-- EntityFramework
-- ASP.NET Core WebAPI
+- AWS S3
+- DynamoDB
