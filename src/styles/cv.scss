@@ -1,0 +1,125 @@
+$sub-text-color: #666;
+
+div.page-wrapper {
+    max-width: 70em;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: "Inter";
+    font-weight: 900;
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+    font-size: 2rem;
+    color: $sub-text-color;
+    font-weight: 400;
+}
+
+img.cv-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 1em;
+}
+
+div.main-data-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.main-data {
+    table td:nth-child(1) {
+        width: 35px;
+        vertical-align: middle;
+    }
+    table td:nth-child(2) {
+        width: 17.4em;
+        vertical-align: middle;
+    }
+
+    table tr {
+        height: 3em;
+    }
+}
+
+
+div.section {
+    margin-top: 2em;
+    h2 {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+    }
+}
+
+div.section {
+    table td:nth-child(1) {
+        color: $sub-text-color;
+        width: 20em;
+        vertical-align: top;
+    }
+}
+
+div.exp-header {
+    font-weight: bold;
+}
+
+li::marker {
+    content: "- "
+}
+
+div.exp-body {
+    ul li {
+        color: $sub-text-color;
+        
+    }
+}
+
+img.portrait {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+}
+
+table.knowledges td {
+    color: black !important;
+}
+
+span.xp-level {
+    display: inline-block;
+    background-color: black;
+    width: 15px;
+    height: 15px;
+    border-radius: 7.5px;
+}
+
+span.xp-level-outer {
+    display: inline-block;
+    background-color: white;
+    border: solid 1px black;
+    width: 15px;
+    height: 15px;
+    border-radius: 7.5px;
+}
+
+table {
+    width: 100%;
+    td {
+        height: 1.5em;
+    }
+}
+
+table.project {
+    margin-top: 1em;
+    width: 100%;
+    td.company {
+        font-weight: bold;
+    }
+    td.date {
+        font-weight: bold;
+    }
+}
